@@ -1,2 +1,2 @@
-#Scholastic Museurm of Art & Science
+#Scholastic Museum of Art & Science
 
