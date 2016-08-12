@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gulp project</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700|Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
+    <!-- font-family: 'Source Sans Pro', sans-serif; -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div class="wrapper">
+        <div class="header-logo">
+        	<span>The Sculpture Museum of Art</span>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Login</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                	<input type="text" placeholder="Email">
+                	<input type="password" placeholder="Password">
+                	<input type="submit" value="Login">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a id="signup" href="#">Register</a>
+              </div>
+            </div>
+          </div>
+        </div> <!--end modal -->
+        
+        <!-- MOBILE MENU -->
+        <ul class="mobile-menu list-unstyled">
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Menu</a> 
+            <ul class="dropdown-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Find</a></li>
+              <li><a href="#">Correct</a></li>
+            </ul>
+        
+          </li>
+        </ul>
+        
+        
+        <!-- END MOBILE MENU -->
+        
+        <!-- DEFAULT/DESKTOP MENU -->
+        <div class="header-menu">
+        	<ul class="nav">
+        		<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#">Sculpture</a></li>
+        				<li><a href="#">Paintings</a></li>
+        				<li><a href="#">Theatre</a></li>
+        				<li><a href="#">Scholarships</a></li>
+        				<li><a href="#">Seminars</a></li>
+        			</ul>
+        		</li>
+        		<li><a href="#">Events</a></li>
+        		<li><a href="#">Education</a></li>
+        		<li><a href="#">Registration</a></li>
+        		<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+        		<li><a href="#">Contact</a></li>
+        	</ul>
+        </div>
+        
+
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="images/gallery.jpeg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p>The Sculpture Museum of Art is one of those places everyone should visit once in a lifetime. Experience and appreciate the complexity and beauty of art through scuptures.</p>
+                  <p><a href="Javascript:void(0)" role="button">Be a Member</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="second-slide" src="images/gallery2.jpeg" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p>Get to know art with our experts and even artists themselves. Our tour guide service can be one-to-one, classroom students, families, and more.</p>
+                  <p><a href="Javascript:void(0)" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="third-slide" src="images/guardians.jpg" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p><strong>Guardians of Time</strong> by <em>Manfred Kielnhofer</em>.</p>
+                  <small>June 2016 Exhibition - Open to Public</small>
+                  <p><a href="Javascript:void(0)" role="button">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.carousel -->
+
+        <div class="events">
+        
+        	<div class="content-left">
+        		<span class="header-one">
+        			Events and Exhibitions
+        		</span>
+        		<p>The Sculpture Museum of Art opens on a weekly basis.</p>
+        		<p>Current and future events/exhibitions are always updated on the homepage.</p>
+        		<p>To be notified, please <a href="#">register as a member</a></p>
+        		<table>
+        			<th>
+        				<tr><strong>Weekdays </strong>| </tr>
+        				<tr><strong>Hours of Operations</strong></tr>
+        			</th><br>
+        			<td>
+        				<tr>Mon-Fri - </tr>
+        				<tr>9:00 AM - 9:30 PM</tr>
+        			</td><br>
+        			<td>
+        				<tr>Sat & Sun - </tr>
+        				<tr><em>Closed</em></tr>
+        			</td><br>
+        			<h5>For more informaiton about holidays, click <a href="#">here</a>.</h5>
+        			<h6><em>Schedule is subject to change</em></h6>
+        		</table>
+        		<div class="hr"></div>
+        		<h4>Search for events</h4>
+        		<form action="">
+        			<input type="text" placeholder="Keywords">
+        			<input type="submit" value="Search">
+        		</form>
+        		<div class="hr"></div>
+        		<h4>Follow Us:</h4>
+        		<ul class="social-links list-unstyled list-inline">
+        			<li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        </li>
+        			<li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </li>
+        			<li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </li>
+        			<li><i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+        </li>
+        		</ul>
+        	</div>
+        
+        	<div class="events-right">
+        		<ul>
+        			<li>
+        				<img src="images/picasso.jpg" alt="picasso sculpture">
+        				<div class="hover-content">
+        					<h4>Picasso Sculpture</h4>
+        					<span>September 14, 2015–February 7, 2016</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/edgar.jpg" alt="Edgar Degas">
+        				<div class="hover-content">
+        					<h4>Edgar Degas: A Strange New Beauty</h4>
+        					<span>Through July 24</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/moma_kusama.jpg" alt="From the Collection">
+        				<div class="hover-content">
+        					<h4>From the Collection: 1960–1969</h4>
+        					<span>Through March 12, 2017</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/Gustav.jpg" alt="Gustave Klimt">
+        				<div class="hover-content">
+        					<h4>Gustav Klimt’s Adele Bloch-Bauer II</h4>
+        					<span>Ongoing</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/theshape.jpg" alt="The Shape of Things">
+        				<div class="hover-content">
+        					<h4>The Shape of Things: Photographs from Robert B. Menschel</h4>
+        					<span>October 29, 2016–May 7, 2017</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/moma_flw.jpg" alt="Frank Lloyd Wright">
+        				<div class="hover-content">
+        					<h4>Frank Lloyd Wright at 150: Unpacking the Archive</h4>
+        					<span>June 12–October 1, 2017</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/FrancisPicabia.jpg" alt="Francis Picabia">
+        				<div class="hover-content">
+        					<h4>Francis Picabia: Our Heads Are Round so Our Thoughts Can Change Direction</h4>
+        					<span>November 20, 2016–March 19, 2017</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        			<li>
+        				<img src="images/momaartlab.jpg" alt="Art Lab">
+        				<div class="hover-content">
+        					<h4>Art Lab: Process</h4>
+        					<span>Through January 2, 2017</span><br/>
+        					<a href="#0" class="more-info">More Information</a>
+        				</div></li>
+        		</ul>
+        	</div>
+        </div>
+
+        <div class="education">
+            <div class="top-edu">
+                <div class="left-content">
+                    <div class="box">
+                        <div class="content-top">
+                            <img alt="sculpture class" src="images/sculpture-class.jpg">
+                            </img>
+                        </div>
+                        <div class="content-bottom">
+                            <h4>Internships and College Credits</h4>
+                            <p>Internships are provided yearly for high school and college graduates at the age of 18 and over.</p>
+                            <p>College students majoring in Art may apply for afternoon/weekend classes to earn college credits.</p>
+                            <a href="#0" class="learn-more">Learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content-top">
+                            <img alt="kids class" src="images/kids-class.jpeg">
+                            </img>
+                        </div>
+                        <div class="content-bottom">
+                            <h4>Educational Programs and Trips</h4>
+                            <p>Museum staff and teachers from other institutions come to teach kids from pre-k to junior high school.</p>
+                            <p>Twice a year kids with valid membership are invited to participate in a trip with their parents/guardians.</p>
+                            <a href="#0" class="learn-more">Learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-description">
+                    <h1>
+                        Education
+                    </h1>
+                    <p>Take part of the Museum's resources as a registered member. Gain weekly access to libraries, signup for short but emersive classes to earn college credit, and give your children the experience of discover different aspects of art.</p>
+                    <a href="#0">Find out more about education</a >
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="support">
+        	<div class="support-blog">
+        		<span id="support-title">Current Blog</span>
+        		<div class="media">
+        		  <div class="media-left">
+        		    <a href="#">
+        		      <img class="media-object" src="..." alt="...">
+        		    </a>
+        		  </div>
+        		  <div class="media-body">
+        		    <h4 class="media-heading">Media heading</h4>
+        		    <p>Learning about teaching others how to code</p>
+        		  </div>
+        		</div>
+        
+        		<div class="media">
+        		  <div class="media-left">
+        		    <a href="#">
+        		      <img class="media-object" src="..." alt="...">
+        		    </a>
+        		  </div>
+        		  <div class="media-body">
+        		    <h4 class="media-heading">Media heading</h4>
+        		    <p>Learning about teaching others how to code</p>
+        		  </div>
+        		</div>
+        
+        		<div class="media">
+        		  <div class="media-left">
+        		    <a href="#">
+        		      <img class="media-object" src="..." alt="...">
+        		    </a>
+        		  </div>
+        		  <div class="media-body">
+        		    <h4 class="media-heading">Media heading</h4>
+        		    <p>Learning about teaching others how to code</p>
+        		  </div>
+        		</div>
+        
+        	</div>
+        	<div class="support-registration">
+        		<span id="support-register">Member Registration</span>
+        		<p>With membership, you're getting the most out of service, including exclusive tour, monthly issues, access to short, Fall and Spring semester classes, and more.</p>
+        		<form action="">
+        			<input type="text" class="form-control" placeholder="Username" required>
+        			<input type="email" class="form-control" placeholder="Email address" required>
+        			<input type="password" class="form-control" placeholder="password" required>
+        			<div class="selection">
+        				<select name="Member-Category">
+        					<option>Select Membership as ...</option>
+        					<option value="Parent">Parent</option>
+        					<option value="Student">Student</option>
+        					<option value="Teacher">Teacher</option>
+        					<option value="Other">Other</option>
+        				</select>
+        			</div>
+        			<input type="submit" class="form-control btn" value="Register">
+        		</form>
+        	</div>
+        	
+        </div>
+
+        <div class="footer">
+        	<div class="top-connect">
+        		<div class="subscribe">
+        			
+        		</div>
+        		<div class="social-media">
+        			
+        		</div>
+        	</div>
+        
+        	<div class="bottom-info">
+        		<div class="location">
+        			
+        		</div>
+        		<div class="contact">
+        			
+        		</div>
+        		<div class="about">
+        			
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- <p>&copy;  @echo author </p> -->
+        
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        
+        
+      </div>
+   
+  </body>
+</html>
